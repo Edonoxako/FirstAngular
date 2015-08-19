@@ -1,0 +1,28 @@
+@import 'includes/parameters';
+@import 'includes/nav-menu';
+@import 'includes/services-list';
+
+
+div#container {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.product {
+	font-family: Arial, sans-serif;
+	border: 1px solid $item-menu-border;
+	padding: $product_padding;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.available-product {
+	@extend .product;
+	background: $soft-green;
+}
+
+.unavailable-product {
+	@extend .product;
+	background: $soft-red;
+}

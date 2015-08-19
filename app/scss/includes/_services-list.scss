@@ -1,0 +1,14 @@
+ul.services-list {
+	list-style: none;
+
+	li {
+		border: 1px $item-menu-border solid;
+		background: $light-blue-background;
+		margin-bottom: 10px;
+		padding: 0 10px;
+
+		h1 {
+			font-size: 15pt;
+		}
+	}
+}

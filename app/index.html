@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myAppDev">
+<head>
+	<meta charset="utf-8">
+	<title>For ANGULAR!</title>
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<!-- endbower -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="container">
+
+	<ul class="top-nav-menu" ng-controller='nav-ctrl'>
+		<li><a ng-class="{selected: isActive('/')}" href="#/">Главная</a></li>
+		<li><a ng-class="{selected: isActive('/goods')}" href="#/goods">Товары</a></li>
+		<li><a ng-class="{selected: isActive('/services')}" href='#/services'>Услуги</a></li>
+		<li><a ng-class="{selected: isActive('/contacts')}" href='#/contacts'>Контакты</a></li>
+	</ul>
+	
+	<ng-view></ng-view>
+
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<!-- endbower -->
+	<script src="js/app.js"></script>
+	<script src="js/app-dev.js"></script>
+	<script src="js/controller.js"></script>
+</div>
+</body>
+</html>

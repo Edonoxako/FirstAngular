@@ -1,0 +1,32 @@
+ul.top-nav-menu {
+	list-style: none;
+	border-bottom: 1px $light-grey solid;
+	padding-bottom: 8px;
+
+	li {
+		display: inline;
+		margin-right: 10px;
+
+		a {
+			color: $light-grey;
+			text-decoration: none;
+			background: $light-blue-background;
+			border: 1px $item-menu-border solid;
+			border-bottom: none;
+			padding: 10px 14px;
+		}
+
+		a:hover {
+			padding: 14px 14px 10px 14px;
+		}
+
+		a.selected {
+			color: $item-selected-font-color;
+			background: white;
+			border: 1px $light-grey solid;
+			border-bottom: 1px white solid;
+			padding: 14px 14px 10px 14px;
+		}
+	}
+}
+
